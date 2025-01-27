@@ -1,145 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
-    <style>
-        .alert {
-            padding: 15px;
-            background-color: #f2f2f2;
-            border-left: 6px solid #4CAF50; /* Green */
-            border-radius: 4px;
-            margin-bottom: 15px;
-            width: fit-content;
-          }
-          
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Montserrat", sans-serif;
-            scroll-behavior: smooth;
-          }
-          
-          :root {
-            --main-accent: #9affe1;
-            --main-bg: #111111;
-            --darker-bg: #151515;
-            --secondary: #6bfaff;
-          }
-          /* Scrollbar */
-          body::-webkit-scrollbar {
-            background-color: var(--darker-bg);
-            width: 12px;
-          }
-          body::-webkit-scrollbar-track {
-            background-color: var(--darker-bg);
-          }
-          body::-webkit-scrollbar-thumb {
-            background-color: var(--main-accent);
-            border-radius: 0px;
-            border: 4px solid var(--main-accent);
-          }
-          
-          ::selection {
-            background: var(--main-accent);
-          }
-          body {
-            overflow-x: hidden;
-            background-color: var(--main-bg);
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            width: 100%;
-            height: 100%;
-          }
-          a {
-            text-decoration: none;
-          }
-          
-          /* Navbar */
-          
-          .navbar {
-            position: sticky;
-            top: 0;
-            background: var(--main-bg);
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.2rem;
-            z-index: 999;
-          }
-          
-          .navbar__container {
-            display: flex;
-            justify-content: space-between;
-            height: 50px;
-            z-index: 1;
-            width: 100%;
-            margin: 0 auto;
-            padding: 0 50px;
-          }
-          
-          #navbar__logo {
-            color: #fff;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            text-decoration: none;
-            font-size: 1.3rem;
-            font-weight: 600;
-          }
-          
-          .navbar__menu {
-            display: flex;
-            align-items: center;
-            list-style: none;
-          }
-          
-          .navbar__item {
-            height: 50px;
-          }
-          
-          .navbar__links {
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 125px;
-            text-decoration: none;
-            height: 100%;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-          }
-          .highlight {
-            border-bottom: 5px solid var(--main-accent);
-          }
-          .navbar__links:hover {
-            color: var(--main-accent);
-          }
-          
-          #navbar__logo:hover {
-            color: var(--main-accent);
-          }
-          
-          @media screen and (max-width: 960px) {
-            .navbar__container {
-              display: flex;
-              justify-content: space-between;
-              height: 80px;
-              z-index: 1;
-              width: 100%;
-              max-width: 1300px;
-              padding: 0;
-            }
-          
-            .navbar__menu {
-              display: grid;
-              grid-template-columns: 4;
-              margin: 0;
-              width: 100%;
+
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+<style>
+.alert {
+padding: 15px;
+background-color: #f2f2f2;
+border-left: 6px solid #4CAF50; /* Green */
+border-radius: 4px;
+margin-bottom: 15px;
+width: fit-content;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Montserrat", sans-serif;
+scroll-behavior: smooth;
+}
+
+:root {
+--main-accent: #9affe1;
+--main-bg: #111111;
+--darker-bg: #151515;
+--secondary: #6bfaff;
+}
+/* Scrollbar */
+body::-webkit-scrollbar {
+background-color: var(--darker-bg);
+width: 12px;
+}
+body::-webkit-scrollbar-track {
+background-color: var(--darker-bg);
+}
+body::-webkit-scrollbar-thumb {
+background-color: var(--main-accent);
+border-radius: 0px;
+border: 4px solid var(--main-accent);
+}
+
+::selection {
+background: var(--main-accent);
+}
+body {
+overflow-x: hidden;
+background-color: var(--main-bg);
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+}
+a {
+text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar {
+position: sticky;
+top: 0;
+background: var(--main-bg);
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.2rem;
+z-index: 999;
+}
+
+.navbar__container {
+display: flex;
+justify-content: space-between;
+height: 50px;
+z-index: 1;
+width: 100%;
+margin: 0 auto;
+padding: 0 50px;
+}
+
+#navbar__logo {
+color: #fff;
+display: flex;
+align-items: center;
+cursor: pointer;
+text-decoration: none;
+font-size: 1.3rem;
+font-weight: 600;
+}
+
+.navbar__menu {
+display: flex;
+align-items: center;
+list-style: none;
+}
+
+.navbar__item {
+height: 50px;
+}
+
+.navbar__links {
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 125px;
+text-decoration: none;
+height: 100%;
+font-size: 1rem;
+transition: all 0.3s ease;
+}
+.highlight {
+border-bottom: 5px solid var(--main-accent);
+}
+.navbar__links:hover {
+color: var(--main-accent);
+}
+
+#navbar__logo:hover {
+color: var(--main-accent);
+}
+
+@media screen and (max-width: 960px) {
+.navbar__container {
+display: flex;
+justify-content: space-between;
+height: 80px;
+z-index: 1;
+width: 100%;
+max-width: 1300px;
+  padding: 0;
+    }
+  
+    .navbar__menu {
+      display: grid;
+      grid-template-columns: 4;
+      margin: 0;
+      width: 100%;
               position: absolute;
               top: -1000px;
               opacity: 1;
@@ -699,7 +699,7 @@
             </p>
             <div class="social__icons">
             
-                < a href="https://x.com/ReubenStill" class="icons" target="_blank"><i class="fab fa-twitter fa-3x" ></i></a>
+                <a href="https://x.com/ReubenStill" class="icons" target="_blank"><i class="fab fa-twitter fa-3x" ></i></a>
                 <a href="https://neo.bullx.io/p/reuben" class="icons" target="_blank"><i class="fa fa-envelope fa-3x" ></i></a>
                 
             </div>
@@ -755,7 +755,7 @@
                     </li>
                     <li>
                         <div class="timeline__content">
-                            <h3 class="date">2022 - Presemt</h3>
+                            <h3 class="date">2022 - 2023</h3>
                             <h1>Started making Static Websites and Coding.</h1>
             
                         </div>
@@ -773,8 +773,8 @@
                 <ul>
                     <li>
                         <div class="timeline__content">
-                            <h3 class="date">2021 - Present.</h3>
-                            <h1>Web developement.</h1>
+                            <h3 class="date">2022 - 2023</h3>
+                            <h1>Web development.</h1>
                             <p>HTML, CSS, JS + (React).</p>
                         </div>
                     </li>
